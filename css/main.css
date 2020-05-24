@@ -72,13 +72,48 @@ table {
 
  body { text-align: center; font: 300 20px/1.7 'Roboto Condensed', sans-serif;}
     .header {display: flex; justify-content: center; align-items: center;}
+    .navbar {display: flex; justify-content: center; align-items: center;}
+    .taxes {text-align: left;}
+    .list-services {display: flex; justify-content: center; align-items: center;}
+      .list-services figure {display: flex; justify-content: center; align-items: center; flex-flow: column; }
 
  /* 2. GENERIC ITEMS */
     .header { height: 450px; background: url(../images/dummy-header.jpg) no-repeat center top; background-size: cover;}
+    .navbar { height: 63px; background-color: #2c3e50; border-bottom: 0.5px solid
+      #3498db;}
+      .navbar ul { list-style-type: none; text-align: center;}
+         .navbar li { display: inline; text-align: center; margin: 0 10px 0 0;}
+            .navbar a { color: #fff; padding: 0 20px; text-decoration: none; text-transform: uppercase; font: 25px/1.2 'Stint Ultra Condensed', monospace;}
+         .navbar li a:hover { background-color: #054caa; color: #ffffff;}
+    .title { margin-bottom: 40px; font: 60px 'Stint Ultra Condensed', monospace; text-transform: uppercase;}
+    p { margin-bottom: 40px;}
+    .button {border: 2px solid #fff; padding: 10px 40px; display: inline-block; text-decoration: none; color: #fff;}
 
  /* 3. PARTS OF THE WEB */
 
+   .content {padding: 80px 0;}
+   .who { background-color: #2c3e50; color: #fff}
+      .who p {max-width: 1055px; margin: 0 auto;}
+
+   .services { background-color: #34495e; color: #fff;}
+
+   .taxes { background: url(../images/dummy-tarifas.jpg) no-repeat center top; background-size: cover; color: #fff;}
+      .contain {max-width: 1055px; margin: 0 auto;}
+      .taxes p {max-width: 500px;}
+
+   .localization {color: #34495e; padding-bottom: 0;}
+      .localization .map img {max-width: 100%; width: 100%;}
+
  /* 4. LIST */
+
+   .list-services figure {position: relative; width: 150px; height: 190px;}
+      .list-services figure::after {content: ""; position: absolute; top: 0; left: 0; border-radius: 50%; z-index: 0; background: #fff; width: 150px; height: 150px;}
+      .list-services img {position: relative; z-index: 1;}
+
+   .list-services li {padding: 0 30px;}
+   .list-services figcaption { position: relative; left: 0; top: 15px; bottom: -60px;}
+
+
 
  /* 5. FORM */
 
